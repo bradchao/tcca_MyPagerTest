@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     TextView mesg;
 
     private ViewPager viewPager;
+    private Fragment[] fragments;
 
 
     @Override
@@ -44,12 +45,16 @@ public class MainActivity extends AppCompatActivity {
         page3 = new Page3();
         page4 = new Page4();
 
+        fragments = new Fragment[]{page1,page2,page3,page4};
+
+
         fmgr = getSupportFragmentManager();
 //        tran = fmgr.beginTransaction();
 //        tran.add(R.id.container, page1);
 //        tran.commit();
 
         viewPager.setAdapter(new MyPagerAdapter(fmgr));
+        viewPager.setCurrentItem(0);
 
 
     }
@@ -62,12 +67,12 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
-            return null;
+            return fragments[position];
         }
 
         @Override
         public int getCount() {
-            return 0;
+            return fragments.length;
         }
     }
 
@@ -75,21 +80,25 @@ public class MainActivity extends AppCompatActivity {
 //        tran = fmgr.beginTransaction();
 //        tran.replace(R.id.container, page1);
 //        tran.commit();
+        viewPager.setCurrentItem(0);
     }
     public void gotoPage2(View view){
 //        tran = fmgr.beginTransaction();
 //        tran.replace(R.id.container, page2);
 //        tran.commit();
+        viewPager.setCurrentItem(1);
     }
     public void gotoPage3(View view){
 //        tran = fmgr.beginTransaction();
 //        tran.replace(R.id.container, page3);
 //        tran.commit();
+        viewPager.setCurrentItem(2);
     }
     public void gotoPage4(View view){
 //        tran = fmgr.beginTransaction();
 //        tran.replace(R.id.container, page4);
 //        tran.commit();
+        viewPager.setCurrentItem(3);
     }
 
 }
