@@ -17,24 +17,28 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="Page1"
+            android:onClick="gotoPage1"
             />
         <Button
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="Page2"
+            android:onClick="gotoPage2"
             />
         <Button
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="Page3"
+            android:onClick="gotoPage3"
             />
         <Button
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="Page4"
+            android:onClick="gotoPage4"
             />
 
     </LinearLayout>
