@@ -7,6 +7,11 @@
     tools:context="com.example.administrator.mypagertest.MainActivity"
     android:orientation="vertical"
     >
+    <TextView
+        android:id="@+id/mesg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,11 +47,17 @@
             />
 
     </LinearLayout>
+    <!--
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
-
+    -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
 
 
 </LinearLayout>
