@@ -2,16 +2,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.administrator.mypagertest.Page2"
-    android:background="#0f0"
-    >
+    tools:context="com.example.administrator.mypagertest.Page5">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Page2"
-        android:textSize="36sp"
-        />
+        android:text="@string/hello_blank_fragment" />
 
 </FrameLayout>
